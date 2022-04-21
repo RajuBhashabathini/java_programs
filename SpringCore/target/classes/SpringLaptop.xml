@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="laptop" class="model.Laptop">
+
+		 <property name="company" value="Audy" /> 
+		
+		<property name="processor" ref="processor"/>
+		
+		<constructor-arg value="Dell" />
+
+	</bean>
+
+	<bean id="processor" class="model.Processor"></bean>
+
+
+</beans>
