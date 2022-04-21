@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcUsingScriptTagOnly</title>
+
+
+</head>
+
+<body id="root">
+
+    <script>
+
+        function createUI()
+        {
+            const body = document.getElementById('root');
+
+            const heading = document.createElement('h1');
+            heading.innerText = "Welcome to my Dynamic Caculator";
+            heading.style.textAlign = "center";
+            heading.style.color = "red";
+
+            const inputFirst = document.createElement('input');
+            const inputSecond = document.createElement('input');
+            const intResult = document.createElement('output');
+
+            const add = document.createElement('button');
+            add.innerText = "ADD";
+            onclick="add()"
+            const sub = document.createElement('button');
+            sub.innerText = "SUB";
+            onclick="sub()"
+            const mul = document.createElement('button');
+            mul.innerText = "MUL";
+            onclick="mul()"
+            const div = document.createElement('button');
+            div.innerText = "DIV";
+            onclick="div()"
+
+
+            body.append(heading);
+
+            body.append(document.createTextNode("First: "));
+            body.append(inputFirst);
+
+            body.append(document.createElement('br'));
+            body.append(document.createElement('br'));
+
+            body.append(document.createTextNode("Second: "));
+            body.append(inputSecond);
+            
+            body.append(document.createTextNode("Result: "));
+            body.append(intResult);
+
+            body.append(document.createElement('br'));
+            body.append(document.createElement('br'));
+
+            body.append(add); 
+            body.append(document.createElement('br'));
+            body.append(document.createElement('br'));
+            
+            body.append(sub);
+            body.append(document.createElement('br'));
+            body.append(document.createElement('br')); 
+            
+            body.append(mul);
+            body.append(document.createElement('br'));
+            body.append(document.createElement('br'));
+            
+            body.append(div);
+        }
+
+
+        function change() 
+        {
+            const heading = document.getElementById('h1');
+            heading.innerHTML = "Welcome to My Calculator";
+            heading.style.color = "red";
+        }
+
+
+        const txtFirst = document.getElementById('first');
+        const txtSecond = document.getElementById('second');
+        const txtResult = document.getElementById('result');
+
+
+        function add() {
+
+            const a = Number(txtFirst.value);
+            const b = Number(txtSecond.value);
+
+            txtResult.value = (a + b);
+
+            // alert(a + b);
+        }
+        function sub() {
+
+            const a = txtFirst.value;
+            const b = txtSecond.value;
+
+            txtResult.innerHTML = a - b;
+            // alert(a - b);
+        }
+
+        function mul() {
+
+            const a = Number(txtFirst.value);
+            const b = Number(txtSecond.value);
+
+            txtResult.value = (a + b);
+
+            // alert(a + b);
+        }
+        function div() {
+
+            const a = txtFirst.value;
+            const b = txtSecond.value;
+
+            txtResult.innerHTML = a - b;
+            // alert(a - b);
+        }
+
+        //calling functions
+        createUI();
+
+    </script>
+</body>
+
+</html>
