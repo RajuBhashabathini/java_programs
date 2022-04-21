@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+
+public class ReverseArrayList {
+	public static void main(String[] args)
+	{
+		
+		ArrayList<Integer> arrayli = new ArrayList<Integer>();
+
+		
+		arrayli.add( 9);
+		arrayli.add(145);
+		arrayli.add(878);
+		arrayli.add(353);
+		arrayli.add(5);
+		System.out.println("Elements before reversing: ");
+		System.out.println(arrayli);
+		printElements(arrayli);
+		
+		Collections.reverse(arrayli);
+		
+		System.out.println("\nElements after reversing: ");
+		printElements(arrayli);
+	}
+
+	
+	public static void printElements(ArrayList<Integer> alist)
+	{
+		for (int i = 0; i < alist.size(); i++)
+		{
+			System.out.print(alist.get(i) + " ");
+		}
+	}
+}

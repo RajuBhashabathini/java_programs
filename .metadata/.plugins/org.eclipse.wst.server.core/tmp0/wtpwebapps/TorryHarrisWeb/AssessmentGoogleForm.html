@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h1 id="h1">Please Fill your Details Correctly</h1>
+       <p> The items marked with * are Mandatory to Fill </p>
+    *Name: <input type="text" id="name" required ="required" /> <br>
+    *Email: <input type="email" id="email" required ="required" /> <br>
+    *Age: <input type="number" id="age" required ="required" /> <br>
+    *Password: <input type="password" id="password" required ="required" /> <br>
+    *ConfirmPassword: <input type="password" id="C-password" required ="required" /> <br>
+     
+      <input type="submit" style="color: red; font-size: 20px;" onclick="check()" value="SUBMIT" />
+     
+  <script>        
+          
+        
+        function check()
+        {
+        	 const txtName = document.getElementById('name');
+             const txtEmail = document.getElementById('email');
+             const txtAge = document.getElementById('age');
+             const txtPassword = document.getElementById('password');
+             const txtConfirmPassword = document.getElementById('C-password'); 
+             
+             const pattern = "/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/"; 
+             
+            const a = (txtName.value);
+            const b = (txtEmail.value);
+            const c = (txtAge.value);
+            const d = (txtPassword.value);
+            const e = (txtConfirmPassword.value);
+            if (!a)
+            {
+         	   alert("please type your name" );
+         	   return;
+            } 
+            else  if (!b)
+            {
+         	   alert("please type your email" );
+         	   return;
+            } 
+            else if(!pattern.match(b))
+            {
+                alert('Invlid email');
+                return;
+            }
+            else  if (!c)
+            {
+         	   alert("please type your age" );
+         	   return;
+            }          
+           
+           else if(c<18)
+           {
+        	   alert("hey kid you are not allowed" );
+        	   return;
+           } 
+           else if(c>99)
+           {
+        	   alert("Sorry sir/maam you are not allowed" );
+        	   return;
+           } 
+           else if (!d)
+           {
+        	   alert("please type your password" );
+        	   return;
+           }
+           else if (!e)
+           {
+        	   alert("please confirm your password" );
+        	   return;
+           }   
+      }
+    </script>
+    </div>
+</body>
+
+</html>

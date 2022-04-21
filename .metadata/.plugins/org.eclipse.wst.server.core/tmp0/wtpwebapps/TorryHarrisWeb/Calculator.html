@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Self Made</title>
+</head>
+
+<body>
+  
+    <h1 id="h1">Calculator</h1>
+
+    <input type="button" onclick="change()" value="Change It!!!" />
+
+    <hr>
+
+    First Number: <input type="number" id="first" /> <br>
+    Second Number: <input type="number" id="second" /> <br>
+    Result: <input type="number" id="result" /> <br>
+
+    <br>
+    <br>
+
+    <input type="button" onclick="add()" value="ADDITION" />
+    <input type="button" onclick="sub()" value="SUBTRACTTION" />
+    <input type="button" onclick="div()" value="DIVISION" />
+    <input type="button" onclick="mul()" value="MULTIPLICTION" />
+
+    <script>
+        function change() 
+        {          
+            const heading = document.getElementById('h1');
+            heading.innerHTML="Welcome to My Calculator";  
+            heading.style.color="red";         
+        }
+
+        const txtFirst = document.getElementById('first');
+        const txtSecond = document.getElementById('second');
+        const txtResult = document.getElementById('result');
+
+        function add()
+        {
+            const a = Number(txtFirst.value);
+            const b = Number(txtSecond.value);
+            txtResult.value = (a + b);
+
+            // alert(a + b);
+        }
+        function sub() 
+        {
+            const a = txtFirst.value;
+            const b = txtSecond.value;
+
+            txtResult.value = a - b;
+            // alert(a - b);
+        }
+        function div() {
+
+            const a = txtFirst.value;
+            const b = txtSecond.value;
+
+            txtResult.value = a / b;
+            //alert(a / b);
+        }
+        function mul() {
+
+            const a = txtFirst.value;
+            const b = txtSecond.value;
+            txtResult.value = a * b;
+            // alert(a * b);
+        }
+
+      
+    </script>
+</body>
+
+</html>

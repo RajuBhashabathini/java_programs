@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+</head>
+
+<body>
+	<table>
+		<tr>
+		<th><u><i>Registration Form:</i></u></th>
+		</tr>
+		
+		<tr>
+		<td>  <label>Name:</label>	</td>
+		<td>	<input type="text" id="name" /></td>
+		</tr>
+		
+		<tr>
+		<td>	<label>Email:</label>	</td>
+		<td>	<input type="email" id="email" /></td>
+		</tr>
+		
+		<tr>
+		<td>	<label>Age:</label>		</td>
+		<td>	<input type="number" id="age" /></td>
+		</tr>
+		
+		<tr>
+		<td>	<label>Password:</label>	</td>
+		<td>	<input type="password" id="pass" />	</td>
+		</tr>
+		
+		<tr>
+		<td>	<label>Confirm Password:</label>	</td>
+		<td>	<input type="text" id="conpass" /></td>
+		</tr>
+		
+		<tr>
+		<td>	<input type="submit" value="Submit" onclick="valid()" /></td>
+		</tr>
+	</table>
+	
+	
+	
+	<script>
+	function valid()
+	{
+		const name = document.getElementById('name').value;
+		const email = document.getElementById('email').value;
+		const age = document.getElementById('age').value;
+		const pass = document.getElementById('pass').value;
+		const conpass = document.getElementById('conpass').value;
+		
+		
+		if(!name)
+		{
+		alert("name should not be empty");
+		return;
+		}
+		else	if(!email)
+		{
+		alert("email should not be empty");
+		return;
+		}
+		else if(!age)
+		{
+		alert("age should not be empty");
+		return;
+		}		
+		else	if(Number(age)<18 || Number(age)>99)
+		{
+		alert("age must be in between 18 to 99");
+		return;
+		}
+		
+		else if(!pass)
+		{
+		alert("password should not be empty");
+		return;
+		}
+		else if(!conpass)
+		{
+		alert("please enter confirm password");
+		return;
+		}
+		else if(pass!=conpass)
+		{
+		alert("passwords are not matching!!!");
+		return;
+		}
+		else		
+		{
+		alert("form submitted successfully");
+		return;
+		}
+	}	
+	</script>
+</body>
+</html>

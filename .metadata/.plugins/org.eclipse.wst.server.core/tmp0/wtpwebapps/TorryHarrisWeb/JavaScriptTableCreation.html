@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table creation HTML JavaScript Tag</title>
+</head>
+
+<body>
+    <table border="1" id="table">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>SALARY</th>
+            </tr>
+        </thead>
+        
+        <tbody id="root">
+
+        </tbody>
+    </table>
+
+    <script>
+
+        const e1 = {
+            "name": 'Shadab',
+            "age": 35,
+            "salary": 1234.5
+        };
+        const e2 = {
+            "name": 'Aman',
+            "age": 23,
+            "salary": 4567.5
+        };
+        const e3 = {
+            "name": 'Momin',
+            "age": 24,
+            "salary": 6543.5
+        };
+        const e4 = {
+            "name": 'Chadana',
+            "age": 22,
+            "salary": 5647.5
+        };
+
+        const emps = [e1, e2, e3, e4];
+
+        const table = document.getElementById('table');
+        table.width = 800
+
+        var allTH = document.getElementsByTagName('th');
+        for (th of allTH) {
+            th.style.background="yellow";
+        }
+
+        const tbody = document.getElementById('root');
+
+        for (x of emps) {
+
+            let row = document.createElement('tr');
+
+            let nameCol = document.createElement('td');
+            nameCol.innerHTML = x.name;
+
+            let ageCol = document.createElement('td');
+            ageCol.innerHTML = x.age;
+
+            let salaryCol = document.createElement('td');
+            salaryCol.innerHTML = x.salary;
+
+
+            row.append(nameCol);
+            row.append(ageCol);
+            row.append(salaryCol);
+
+            tbody.append(row);
+        }
+
+    </script>
+</body>
+
+</html>
