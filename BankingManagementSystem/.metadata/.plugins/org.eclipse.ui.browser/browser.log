@@ -1,0 +1,6 @@
+
+Mar 28, 2022 22:02:23.435 NEW SESSION
+Mar 28, 2022 22:02:23.435 [11516:4772:0328/220223.430:ERROR:edge_auth_errors.cc(402)] EDGE_IDENTITY: Get Default OS Account failed: Error: Primary Error: kImplicitSignInFailure, Secondary Error: kAccountProviderFetchError, Platform error: 0, Error string: 
+Mar 28, 2022 22:02:23.436 
+Mar 28, 2022 22:02:26.361 [11516:4772:0328/220226.360:ERROR:device_event_log_impl.cc(214)] [22:02:26.360] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Mar 28, 2022 22:02:26.363 [11516:4772:0328/220226.360:ERROR:device_event_log_impl.cc(214)] [22:02:26.360] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
