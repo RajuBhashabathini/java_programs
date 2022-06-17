@@ -1,0 +1,12 @@
+127.0.0.1 - - [17/Jun/2022:09:38:46 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:09:38:47 +0530] "GET /FrontEnd/register.html HTTP/1.1" 200 1903
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:09:38:47 +0530] "GET /FrontEnd/js/myScript.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:09:38:48 +0530] "GET /FrontEnd/images/ResBackground2.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:09:38:51 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:09:42:20 +0530] "GET /FrontEnd/register.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:09:42:51 +0530] "GET /FrontEnd/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:09:43:43 +0530] "GET /FrontEnd/dashBoard.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:09:43:43 +0530] "GET /FrontEnd/css/bootstrap.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:09:43:43 +0530] "GET /FrontEnd/css/navbar-top-fixed.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:09:43:43 +0530] "GET /FrontEnd/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:09:43:43 +0530] "GET /FrontEnd/images/OIP.jpg HTTP/1.1" 304 -

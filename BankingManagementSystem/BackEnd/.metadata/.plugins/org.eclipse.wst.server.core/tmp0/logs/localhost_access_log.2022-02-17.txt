@@ -1,0 +1,15 @@
+127.0.0.1 - - [17/Feb/2022:20:31:18 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:31:19 +0530] "GET /FrontEnd/register.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:31:19 +0530] "GET /FrontEnd/js/myScript.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:31:20 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:33:05 +0530] "GET /FrontEnd/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:33:20 +0530] "GET /FrontEnd/dashBoard.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:33:20 +0530] "GET /FrontEnd/css/bootstrap.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:33:20 +0530] "GET /FrontEnd/images/bank.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:33:20 +0530] "GET /FrontEnd/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:33:20 +0530] "GET /FrontEnd/css/navbar-top-fixed.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:33:55 +0530] "GET /FrontEnd/depositeMoney.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:34:10 +0530] "GET /FrontEnd/withdrawMoney.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:34:13 +0530] "GET /FrontEnd/fundTransfer.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:34:20 +0530] "GET /FrontEnd/bankStatement.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2022:20:35:00 +0530] "GET /FrontEnd/registration.html HTTP/1.1" 404 781

@@ -1,0 +1,33 @@
+World Famous Bank----->>
+
+
+First page--1---Aadhi ---(Done)
+
+login page---* (username , password , login , reset , Registration option , forget options( another pages for forget options ))
+
+second page--2---Raju
+
+Registration page----* ( required details firstname , lastname , email(username) , password (), mobile number )
+create details like(account number , IFSC code )
+
+Third page--3---Shesha
+
+Profile page ( account details)----- * (Set/change PIN (for payments confirmation and to check balance)) 
+statement(Transection History) , manage profile  ,
+, payments( Transections ) ( To make Payment , Quick tranfer Money  )----Search in Google
+ 
+ forth page---4---Ganesh
+ 
+ Transection History ( all money transfer details)---Search in Google
+ 
+ fifth page---5---Bharathi
+ 
+ manage profile---( change password )--- page
+ 
+ sixth page---6---Bharathi
+ 
+ payments----( Money Transections )---Search in Google----
+ ( account number , IFSC code , amount( Rs/- ) , buttons(cancel , confirm))
+ 
+ 
+ 
